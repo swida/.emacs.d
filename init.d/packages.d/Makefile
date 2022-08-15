@@ -1,6 +1,6 @@
 .PHONY: all
 all:
-	cd melpa; make
-	cd builtin; make
+	cd melpa; $(MAKE)
+	cd builtin;$(MAKE)
 
 ### Makefile ends here
