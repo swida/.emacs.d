@@ -59,13 +59,6 @@
 ;; Don't do transient marking
 (transient-mark-mode -1)
 
-;; Things specific to macOS.
-(when is-a-macOS-window-p
-  ;; Have "option" be "super".
-  (set (intern "mac-option-modifier") 'super)
-  ;; Have "cmd" be "meta"
-  (set (intern "mac-command-modifier") 'meta))
-
 ;; Things specific to Windows.
 (when is-a-win32-p
   (set (intern "w32-lwindow-modifier") 'meta))
