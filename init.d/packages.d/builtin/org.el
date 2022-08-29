@@ -8,13 +8,13 @@
   (org-src-fontify-natively t)
   (org-cycle-separator-lines 1)
   :config
-  (defun org-davep-config ()
+  (defun org-hadley-config ()
     "Load up the rest of my org-mode config."
     (interactive)
     (let ((org-local-config "~/.config/org/"))
       (when (file-exists-p org-local-config)
         (mapc #'load (directory-files org-local-config t (rx ".el" eol))))))
-  (funcall 'org-davep-config)
+  (funcall 'org-hadley-config)
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((emacs-lisp . t)

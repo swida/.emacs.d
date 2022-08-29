@@ -51,8 +51,11 @@
  ("<f12> p r"     . package-refresh-contents)
  ("<f12> p t"     . package-lint-current-buffer)
  ("<f12> p u"     . package-upload-buffer)
- ("<f12> ? w"     . woman)
- ("<f12> m r"     . rerun-last-input-sql-command))
+ ("<f12> ? w"     . woman))
+
+;; MySQL dev keys
+(bind-keys
+ ("C-c m l"     . rerun-last-input-sql-command))
 
 ;; Don't do shift-selecting.
 (setq shift-select-mode nil)
