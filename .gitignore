@@ -1,8 +1,11 @@
-.eshell/history
-.eshell/lastdir
+/.eshell/history
+/.eshell/lastdir
 *.elc
 .DS_Store
-.eww/
-.mc-lists.el
-.quickurls.el
-.eshell
+/.eww/
+/.mc-lists.el
+/.quickurls.el
+/.eshell
+/projectile-bookmarks.eld
+/auto-save-list
+/projects
