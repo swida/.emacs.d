@@ -62,6 +62,9 @@
 ;; Don't do transient marking
 (transient-mark-mode -1)
 
+(setq set-mark-command-repeat-pop t)
+
+
 ;; Things specific to Windows.
 (when is-a-win32-p
   (set (intern "w32-lwindow-modifier") 'meta))
